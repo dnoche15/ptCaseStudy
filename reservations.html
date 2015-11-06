@@ -2,7 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Pacific Trails Resort :: Reservations</title>
+
+    <!-- Add to the head section -->
+    <!--[if lt IE 9]> 
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+<![endif]-->
+    <title>Pacific Trails :: Reservations</title>
+    <link rel="stylesheet" href="pacific.css">
     <meta charset="utf-8">
     <link href="pacific.css" rel="stylesheet">
 </head>
@@ -13,23 +19,45 @@
             <h1>Pacific Trails Resort</h1></header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="yurts.html">Yurts</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
+
+                <li><a href="index.html">Home</a> &nbsp;</li>
+                <li><a href="yurts.html">Yurts</a> &nbsp;</li>
+                <li><a href="activities.html">Activities</a> &nbsp;</li>
+                <li><a href="reservations.html">Reservations</a> &nbsp;</li>
             </ul>
         </nav>
-        <div id="activitieshero"></div>
-            <main>
-                <div id="content">
-                    <h2>CLOSED</h2>
-                </div>
-                <footer>
-                    Copyright &copy; 2016 Pacific Trails Resort
-                    <br>
-                    <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-                </footer>
-            </main>
+        <main>
+            <h2>Reservations</h2>
+            <form method="post" action="http://webdevbasics.net/scripts/pacific.php
+">
+                <label for="FName">First Name:</label>
+                <input type="text" name="FName" id="FName" Required="required*">
+                <br>
+                <label for="LName">Last Name:</label>
+                <input type="text" name="LName" id="LName" required="required*">
+                <br>
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" required="required*">
+                <br>
+                <label for="Tel">Phone:</label>
+                <input type="text" name="Tel" id="Phone" maxlenght="10">
+                <br>
+                <label for="Arrival">Arrival Date:</label>
+                <input type="text" name="Arrival" id="arrival" max="10">
+                <br>
+                <label for="nights">Nights:</label>
+                <input type="number" name="Nights" id="nights" min="1" max="30">
+                <br>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="2" cols="40" name="Comments" required="required*"></textarea>
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </main>
+        <footer>
+            <p>Copyright © 2016 Pacific Tails Resort></p>
+            <a href="Don@Noche.com">Don@Noche.com</a>
+        </footer>
         </div>
 </body>
 
